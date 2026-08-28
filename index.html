@@ -1,0 +1,189 @@
+<!doctype html>
+<title>Confidentialité Délire Collectif</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  --bg:#faf8fd;
+  --surface:#ffffff;
+  --ink:#1e1332;
+  --ink-soft:#4a3f63;
+  --line:#e7e0f3;
+  --accent:#7b3fe4;
+  --gold:#c98a1a;
+  --pink:#ef5a95;
+  --blue:#2f8fc4;
+  --mono-bg:#f2edfa;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#150c24;
+    --surface:#1e1332;
+    --ink:#f4eefe;
+    --ink-soft:#c9bfe0;
+    --line:#3a2c55;
+    --accent:#b28bf5;
+    --gold:#f6bb45;
+    --pink:#ef5a95;
+    --blue:#5cb6ea;
+    --mono-bg:#241740;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#150c24;
+  --surface:#1e1332;
+  --ink:#f4eefe;
+  --ink-soft:#c9bfe0;
+  --line:#3a2c55;
+  --accent:#b28bf5;
+  --gold:#f6bb45;
+  --pink:#ef5a95;
+  --blue:#5cb6ea;
+  --mono-bg:#241740;
+}
+
+*{box-sizing:border-box;}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'IBM Plex Sans', -apple-system, Segoe UI, sans-serif;
+  line-height:1.65;
+  font-size:16px;
+}
+.wrap{ max-width:760px; margin:0 auto; padding:56px 24px 100px; }
+
+header.hero{
+  border-bottom:1px solid var(--line);
+  padding-bottom:32px; margin-bottom:40px;
+}
+.eyebrow{
+  font-weight:600; font-size:0.8em; letter-spacing:0.08em; text-transform:uppercase;
+  color:var(--accent); margin-bottom:10px;
+}
+h1{
+  font-family:'Fredoka', sans-serif; font-weight:600;
+  font-size:2.3em; line-height:1.1; margin:0 0 12px; text-wrap:balance;
+  color:var(--ink);
+}
+.meta{ color:var(--ink-soft); font-size:0.92em; }
+
+h2{
+  font-family:'Fredoka', sans-serif; font-weight:600;
+  font-size:1.35em; color:var(--ink);
+  margin:44px 0 14px;
+  display:flex; align-items:center; gap:10px;
+}
+h2 .num{
+  font-family:'IBM Plex Mono', monospace; font-size:0.6em; font-weight:600;
+  color:var(--accent); background:var(--mono-bg);
+  border-radius:8px; padding:4px 9px;
+}
+p{ margin:0 0 14px; color:var(--ink); max-width:65ch; }
+p.soft{ color:var(--ink-soft); }
+ul{ margin:0 0 14px; padding-left:1.3em; max-width:65ch; }
+li{ margin-bottom:8px; }
+strong{ color:var(--ink); }
+
+.card{
+  background:var(--surface); border:1px solid var(--line);
+  border-radius:16px; padding:20px 22px; margin:18px 0;
+}
+.card.notice{ border-color: color-mix(in srgb, var(--gold) 40%, var(--line)); }
+.card.notice .label{
+  font-weight:700; font-size:0.78em; letter-spacing:0.06em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:6px; display:block;
+}
+
+table{ width:100%; border-collapse:collapse; margin:10px 0 20px; font-size:0.95em; }
+th,td{ text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+th{ font-family:'Fredoka',sans-serif; font-weight:600; color:var(--ink-soft); font-size:0.85em; text-transform:uppercase; letter-spacing:0.03em; }
+.tablewrap{ overflow-x:auto; }
+
+code{
+  font-family:'IBM Plex Mono', monospace; font-size:0.88em;
+  background:var(--mono-bg); padding:1px 6px; border-radius:5px;
+}
+
+footer{
+  margin-top:56px; padding-top:24px; border-top:1px solid var(--line);
+  color:var(--ink-soft); font-size:0.88em;
+}
+a{ color:var(--accent); }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">Délire Collectif</div>
+    <h1>Politique de confidentialité</h1>
+    <p class="meta">Dernière mise à jour : 28 août 2026</p>
+  </header>
+
+  <p>Délire Collectif est un jeu d'écriture collaborative, jouable en solo (avec des personnages IA) ou à plusieurs en temps réel. Cette page explique simplement quelles données sont traitées quand vous utilisez l'application, et par qui.</p>
+
+  <h2><span class="num">01</span> Ce que nous ne collectons pas</h2>
+  <p>Délire Collectif ne demande ni compte, ni inscription, ni adresse e-mail, ni numéro de téléphone. Il n'y a pas de mot de passe, pas de profil permanent, pas de suivi d'identité réelle. Le pseudonyme et l'avatar que vous choisissez en partie ne sont jamais reliés à votre identité civile.</p>
+
+  <h2><span class="num">02</span> Ce que l'application traite, et pourquoi</h2>
+
+  <div class="tablewrap">
+  <table>
+    <tr><th>Donnée</th><th>Origine</th><th>Pourquoi</th><th>Durée</th></tr>
+    <tr>
+      <td>Pseudonyme et avatar choisis</td>
+      <td>Saisis par vous en entrant dans une partie</td>
+      <td>Afficher qui a écrit quoi aux autres joueurs de la même salle</td>
+      <td>Le temps de la partie, supprimés avec la salle</td>
+    </tr>
+    <tr>
+      <td>Textes écrits en partie (phrases, réponses)</td>
+      <td>Saisis par vous pendant le jeu</td>
+      <td>Construire l'histoire commune et l'afficher aux autres joueurs de la salle</td>
+      <td>Le temps de la partie ; la salle est effacée après la partie</td>
+    </tr>
+    <tr>
+      <td>Code de salle et identifiants techniques de session</td>
+      <td>Générés par l'application</td>
+      <td>Relier les appareils d'une même partie entre eux</td>
+      <td>Le temps de la partie</td>
+    </tr>
+    <tr>
+      <td>Identifiant publicitaire de l'appareil</td>
+      <td>Fourni par le système Android via Google AdMob</td>
+      <td>Afficher des publicités (voir section suivante)</td>
+      <td>Selon les règles de Google (voir leur politique)</td>
+    </tr>
+  </table>
+  </div>
+
+  <p class="soft">Aucune de ces données n'est vendue. Le contenu écrit en partie n'est ni public, ni indexé, ni consultable en dehors de la salle de jeu concernée.</p>
+
+  <h2><span class="num">03</span> Hébergement technique des parties</h2>
+  <p>Pour faire fonctionner le mode multijoueur en temps réel, l'application utilise <strong>Google Firebase</strong> (Cloud Firestore) comme base de données technique : c'est ce service qui synchronise, entre les téléphones des joueurs d'une même salle, les pseudonymes, avatars et textes échangés pendant la partie. Firebase agit ici comme sous-traitant technique — voir la <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">politique de confidentialité de Firebase</a>.</p>
+
+  <h2><span class="num">04</span> Publicités</h2>
+  <p>L'application affiche des publicités fournies par <strong>Google AdMob</strong> (bannière et publicité interstitielle entre les parties) afin de financer son fonctionnement, l'application étant gratuite. AdMob peut utiliser l'identifiant publicitaire de votre appareil et des informations techniques (type d'appareil, langue, approximation de localisation) pour sélectionner les annonces affichées.</p>
+  <p>Selon votre région, un bandeau de consentement peut vous être présenté au premier lancement pour choisir entre publicités personnalisées ou non personnalisées, conformément au RGPD et aux règles de Google sur le consentement. Vous pouvez à tout moment gérer les paramètres publicitaires de votre appareil Android dans <strong>Paramètres → Confidentialité → Publicités</strong> (réinitialiser ou limiter l'identifiant publicitaire).</p>
+  <p>Pour en savoir plus : <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique de confidentialité de Google</a> et <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">fonctionnement d'AdMob</a>.</p>
+
+  <h2><span class="num">05</span> Contenu écrit par les joueurs</h2>
+  <p>Le principe du jeu repose sur des textes libres écrits par les joueurs pendant une partie. Ce contenu reste privé à la salle de jeu en cours et n'est pas modéré automatiquement avant affichage aux autres joueurs de cette même salle. Nous recommandons de jouer avec des personnes de confiance et de ne jamais inclure d'informations personnelles ou sensibles dans vos réponses.</p>
+
+  <h2><span class="num">06</span> Enfants</h2>
+  <p>Délire Collectif n'est pas conçu spécifiquement pour les enfants et ne collecte sciemment aucune donnée personnelle d'enfants. Le contenu généré par les joueurs étant libre, l'application n'est pas recommandée aux jeunes enfants sans supervision d'un adulte.</p>
+
+  <h2><span class="num">07</span> Vos droits</h2>
+  <p>Comme aucune donnée n'est associée à une identité ou à un compte, il n'existe pas de profil permanent à consulter, corriger ou supprimer côté application. Pour toute question sur cette politique, sur AdMob ou sur Firebase, vous pouvez nous contacter à l'adresse ci-dessous.</p>
+
+  <h2><span class="num">08</span> Modifications de cette politique</h2>
+  <p>Cette politique peut être mise à jour si l'application évolue (nouvelles fonctionnalités, nouveaux partenaires publicitaires). La date de dernière mise à jour en haut de page reflète la version en vigueur.</p>
+
+  <h2><span class="num">09</span> Contact</h2>
+  <p>Pour toute question concernant cette politique de confidentialité : <strong><a href="mailto:yaeplatrme@gmail.com">yaeplatrme@gmail.com</a></strong></p>
+
+  <footer>
+    Délire Collectif — jeu d'écriture collaborative.
+  </footer>
+
+</div>
